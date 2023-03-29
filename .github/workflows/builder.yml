@@ -10,7 +10,7 @@ jobs:
     - 
       uses: actions/checkout@v2
     - name: Build and Publish the Docker image to GitHub Packages
-      uses: elgohr/Publish-Docker-Github-Action@3.04
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: gythialy/golang-cross/golang-cross-builder
         username: gythialy
@@ -20,7 +20,7 @@ jobs:
         tags: "latest,v1.16.2"
     
     - name: Build and Publish the Docker image to ghcr.io
-      uses: elgohr/Publish-Docker-Github-Action@3.04
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: gythialy/golang-cross-builder
         username: gythialy
